@@ -25,6 +25,10 @@ const Newsapp = () => {
      setSearch(e.target.value)
  }
 
+ const userInput = (e) => {
+     setSearch(e.target.value)
+ }
+
   return (
     <div>
       <nav>
@@ -36,7 +40,7 @@ const Newsapp = () => {
           <a>Trending</a>
         </ul>
         <div className="search-bar">
-          <input type="text" placeholder="Search News" onChange={handleInput} />
+          <input type="text" placeholder="Search News" value={search} onChange={handleInput} />
           <button onClick={getData}>Search</button>
         </div>
       </nav>
@@ -45,11 +49,11 @@ const Newsapp = () => {
       </div>
 
       <div className="category-btns">
-          <button>Sports</button>
-          <button>Politics</button>
-          <button>Entertainment</button>
-          <button>Health</button>
-          <button>Fitness</button>
+          <button onClick={userInput} value="sports">Sports</button>
+          <button onClick={userInput} value="politics">Politics</button>
+          <button onClick={userInput} value="entertainment">Entertainment</button>
+          <button onClick={userInput} value="health">Health</button>
+          <button onClick={userInput} value="fitness">Fitness</button>
       </div>
       
       <div>
