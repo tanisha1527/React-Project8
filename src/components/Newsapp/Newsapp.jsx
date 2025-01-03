@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Newsapp.css";
 import Cards from "../Cards/Cards";
 
 const Newsapp = () => {
 
- const [search,setSearch] = useState("india"); 
+ const [search,setSearch] = useState("india Politics"); 
  const [newsData,setNewsData] = useState(null);
 
  const API_KEY = "d1b2ce5143724fa1aa6706e32630faed"
@@ -15,6 +15,10 @@ const Newsapp = () => {
       console.log(jsonData.articles);
       setNewsData(jsonData.articles)
  }
+
+ useEffect(()=>{
+      getData()
+ },[])
 
  const handleInput = (e) => {
      console.log(e.target.value);
