@@ -1,0 +1,41 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightblue;
+    padding: 9px;
+}
+nav input{
+     width: 250px;
+     text-decoration: none;
+     padding: 9px;
+     font-size: 18px;
+     border: none;
+}
+.search-bar{
+     display: flex;
+     align-items: center;
+     gap: 11px;
+}
+.search-bar input{
+    outline: none;
+    border-radius: 20px;
+}
+nav button{
+     width: 70px;
+     height: 38px;
+     background-color: rgb(86, 138, 207);
+     border: none;
+     border-radius: 20px;
+     color: white;
+     font-size: 16px;
+     cursor: pointer;
+}
+nav button:hover{
+    background-color: rgb(110, 159, 222);
+}
+nav ul{
+     display: flex;
+     font-weight: 540;
+     gap: 20px;
+}
