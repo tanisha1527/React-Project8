@@ -3,8 +3,13 @@ nav{
     align-items: center;
     justify-content: space-around;
     background-color: lightblue;
-    padding: 9px;
+    padding: 15px;
 }
+
+nav h1{
+     font-weight: 800; 
+}
+
 nav input{
      width: 250px;
      text-decoration: none;
@@ -32,7 +37,7 @@ nav button{
      cursor: pointer;
 }
 nav button:hover{
-    background-color: rgb(110, 159, 222);
+    background-color: rgb(58, 127, 216);
 }
 nav ul{
      display: flex;
@@ -43,21 +48,29 @@ nav ul{
 .category-btns {
      display: flex;
      justify-content: center;
-     padding-top: 4px;
      gap: 11px;
-     flex-wrap: wrap;
 }
 
 .category-btns button{
-     padding: 10px 40px;
+     width: 130px;
+     height: 33px;
+     padding: 2px;
      background-color: rgb(235, 72, 72);
      color: white;
-     font-size: 20px;
+     font-size: 18px;
+     outline: none;
      border: none;
-     border-radius: 500px;
+     border-radius: 16px;
+     cursor: pointer;
 }
 
 .category-btns button:hover{
-    background-color: rgb(240, 91, 94);
-    cursor: pointer;
+    background-color: rgb(223, 74, 76);
+}
+
+.heading{
+     text-align: center;
+     font-weight: 600;
+     font-size: 24px;
+     padding: 25px;
 }

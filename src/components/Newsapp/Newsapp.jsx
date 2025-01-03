@@ -18,6 +18,9 @@ const Newsapp = () => {
           <button>Search</button>
         </div>
       </nav>
+      <div>
+         <p className="heading">Stay Update with TrendyNews</p>
+      </div>
 
       <div className="category-btns">
           <button>Sports</button>
