@@ -49,7 +49,7 @@ const Newsapp = () => {
       </div>
       
       <div>
-        {newsData?<Cards data={newsData}/> : null }
+        {newsData? <Cards data={newsData}/> : null }
       </div>
     </div>
   );

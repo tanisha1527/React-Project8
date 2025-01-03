@@ -4,8 +4,9 @@ import "./Cards.css";
 const Cards = ({ data }) => {
   console.log(data);
 
-  const readMore = (url)=> {
-      window.open(url)
+
+  const readMore = (url) => {
+       window.open(url)
   }
 
   return (
@@ -15,9 +16,9 @@ const Cards = ({ data }) => {
               <div className="card">
                  <img src={currentItem.urlToImage}/>
                  <div className="content">
-                    <a className="title">{currentItem.title}</a>
+                    <a className="title"onClick={()=>window.open(currentItem.url)}>{currentItem.title}</a>
                     <p>{currentItem.description}</p>
-                    <button onClick={readMore(currentItem.url)}>Read More</button>
+                    <button onClick={()=>window.open(currentItem.url)}>Read More</button>
                  </div>
               </div>
           )
