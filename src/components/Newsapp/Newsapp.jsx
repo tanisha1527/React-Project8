@@ -1,5 +1,6 @@
 import React from "react";
 import "./Newsapp.css";
+import Cards from "../Cards/Cards";
 
 const Newsapp = () => {
   return (
@@ -26,6 +27,9 @@ const Newsapp = () => {
           <button>Fitness</button>
       </div>
       
+      <div>
+         <Cards/>
+      </div>
     </div>
   );
 };
