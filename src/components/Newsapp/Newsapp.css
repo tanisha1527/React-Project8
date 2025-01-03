@@ -17,15 +17,18 @@ nav input{
      font-size: 18px;
      border: none;
 }
+
 .search-bar{
      display: flex;
      align-items: center;
      gap: 11px;
 }
+
 .search-bar input{
     outline: none;
     border-radius: 20px;
 }
+
 nav button{
      width: 70px;
      height: 38px;
@@ -36,9 +39,11 @@ nav button{
      font-size: 16px;
      cursor: pointer;
 }
+
 nav button:hover{
     background-color: rgb(58, 127, 216);
 }
+
 nav ul{
      display: flex;
      font-weight: 540;
