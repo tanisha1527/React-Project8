@@ -17,6 +17,15 @@ const Newsapp = () => {
           <button>Search</button>
         </div>
       </nav>
+
+      <div className="category-btns">
+          <button>Sports</button>
+          <button>Politics</button>
+          <button>Entertainment</button>
+          <button>Health</button>
+          <button>Fitness</button>
+      </div>
+      
     </div>
   );
 };

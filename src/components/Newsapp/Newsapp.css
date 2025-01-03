@@ -39,3 +39,25 @@ nav ul{
      font-weight: 540;
      gap: 20px;
 }
+
+.category-btns {
+     display: flex;
+     justify-content: center;
+     padding-top: 4px;
+     gap: 11px;
+     flex-wrap: wrap;
+}
+
+.category-btns button{
+     padding: 10px 40px;
+     background-color: rgb(235, 72, 72);
+     color: white;
+     font-size: 20px;
+     border: none;
+     border-radius: 500px;
+}
+
+.category-btns button:hover{
+    background-color: rgb(240, 91, 94);
+    cursor: pointer;
+}
